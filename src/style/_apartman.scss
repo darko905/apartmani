@@ -1,0 +1,71 @@
+.apartman {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 3rem;
+    justify-content: center;
+
+    @media screen and (max-width: 992px) {
+      gap: 1.25rem;
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: max-content;
+    }
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__card {
+    background-color: $first-color-gray;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    @media screen and (max-width: 992px) {
+      padding: 1rem;
+    }
+  }
+
+  &__img {
+    width: 340px;
+    height: 200px;
+    border-radius: 1rem;
+    margin-bottom: $mb-1;
+    margin-right: $mb-1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: $mb-0-75;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: $h2-font-size;
+    font-weight: $font-medium;
+    margin-bottom: $mb-1;
+    color: $first-color;
+    text-align: center;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: $mb-0-25;
+    }
+  }
+
+  &__subtitle {
+    text-align: center;
+    color: $text-color;
+
+    &-icon {
+      color: $first-color;
+    }
+  }
+  &__description {
+    width: 25rem;
+  }
+}
