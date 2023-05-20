@@ -1,0 +1,60 @@
+.section{
+    &__description{
+        text-align: center;
+        margin-bottom: $mb-2;
+    }
+
+    &__subtitle{
+        color: $first-color;
+    }
+}
+
+.testominial{
+    &__container{
+        width: 900px;
+
+        @media screen and (max-width: 992px){
+            width: initial;
+        }
+
+    }
+    &__card{
+        background-color: $first-color-gray;
+        padding: 1.5rem 2rem;
+        border-radius: 1.5rem;
+        margin-bottom: $mb-3;
+
+        @media screen and (max-width: 992px){
+            padding: 1.25rem 1.5rem;
+        }
+    }
+    &__img{
+        width: 60px;
+        border-radius: 3rem;
+        margin-bottom: $mb-1;
+    }
+    &__name{
+        font-size: $h2-font-size;
+        font-weight: $font-semi-bold;
+        margin-bottom: $mb-0-25;
+        color: $title-color;
+    }
+    &__description{
+        font-size: $normal-font-size;
+        color: $title-color;
+    }
+    &__description-quote{
+        
+            font-size: 2rem;
+    }
+
+}
+
+/*Swiper*/
+.swiper-pagination-bullet{
+    background-color: $first-color !important;
+}
+.swiper-pagination-active{
+    background-color: $first-color!important;
+}
+

@@ -46,6 +46,7 @@ const ApartmanList = () => {
                 <FaBed className="apartman__subtitle-icon" />{" "}
                 {post.fields.productDescription}
               </p>
+              
               </Link>
               
               

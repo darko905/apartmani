@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createClient } from "contentful";
 import { FaBed } from "react-icons/fa";
+import { AiFillPhone } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 
 const ApartmanDetails = () => {
@@ -52,6 +53,7 @@ const ApartmanDetails = () => {
               <p className="apartman-single__description">
                 {singleApartman?.fields?.productSummary}
               </p>
+              <button className="button button-flex">Pozovite <AiFillPhone/></button>
             </div>
             <div className="apartman-single__right">
               <div className="apartman-single__card">

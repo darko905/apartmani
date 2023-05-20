@@ -7,6 +7,7 @@ import {
 import { BiSwim } from "react-icons/bi";
 import { CgGym } from "react-icons/cg";
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -31,9 +32,9 @@ const About = () => {
               fotelju i čitajte mesečne izveštaje o prihodima koje Vam naš tim
               salje svakog meseca.
             </p>
-            <a href="#home">
+            <Link to='/apartmani'>
               <button className="button">Pogledajte ponudu <BsBoxArrowUpRight /></button>
-            </a>
+            </Link>
           </div>
           <div className="text-container__right">
             <div className="text-container__right__box">

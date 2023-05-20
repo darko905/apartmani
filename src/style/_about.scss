@@ -36,12 +36,17 @@
         font-size: $big-font-size;
         line-height: 1.2;
         margin-bottom: $mb-2;
+
+        @media (max-width: 768px){
+          font-size: $h1-font-size;
+        }
       }
   
       p {
         font-size: $normal-font-size;
         line-height: 1.5;
         margin-bottom: $mb-3;
+        text-align: justify;
       }
     }
   
