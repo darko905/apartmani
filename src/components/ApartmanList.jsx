@@ -30,6 +30,8 @@ const ApartmanList = () => {
 
       
       <section className="section apartman" id="apartman">
+      <h2 className="section__title">Apartmani u strogom centru Zlatibora</h2>
+      <span className="section__subtitle">Veliki izbor apartmana na Zlatiboru. Prijatan ambijent i moderan dizajn.</span>
         <div className="apartman__container container grid">
           {apartmanPost?.items?.map((post) => (
             <div className="apartman__card" key={post.sys.id}>

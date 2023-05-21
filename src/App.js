@@ -1,4 +1,5 @@
 import './App.css';
+import AboutPage from './Pages/AboutPage';
 import ApartmaniPage from './Pages/ApartmaniPage';
 import FaqPage from './Pages/FaqPage';
 import HomePage from './Pages/HomePage';
@@ -19,6 +20,7 @@ function App() {
         <Route index path='/faq' element={<FaqPage/>}/>
         <Route index path='/testominial' element={<TetsominialPage/>}/>
         <Route index path='/wellness' element={<Wellness/>}/>
+        <Route index path='/about' element={<AboutPage/>}/>
       </Routes>
      
     </>

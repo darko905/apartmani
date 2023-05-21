@@ -22,6 +22,6 @@ export const SaunaData = [
   {
     id: 4,
     image: Image4,
-    alt: "Image sauna 3",
+    alt: "Image sauna 4",
   },
 ];

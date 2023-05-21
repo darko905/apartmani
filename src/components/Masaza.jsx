@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 
-import { JakuzziData } from "./JakuzziData";
+import { MasazaData } from "./MasazaData";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const Jakuzzi = () => {
+const Masaza = () => {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide(slide === JakuzziData.length - 1 ? 0 : slide + 1);
+    setSlide(slide === MasazaData.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? JakuzziData.length - 1 : slide - 1);
+    setSlide(slide === 0 ? MasazaData.length - 1 : slide - 1);
   };
   return (
     <>
-      <div className="container bazen-container">
-        <div className="bazen-container__left">
+      <div className="container masaza-container">
+        <div className="masaza-container__left">
           <IoIosArrowBack onClick={prevSlide} className="arrow arrow-left" />
-          {JakuzziData.map((item, id) => {
+          {MasazaData.map((item, id) => {
             return (
               <img
                 src={item.image}
@@ -34,7 +34,7 @@ const Jakuzzi = () => {
           />
 
           <span className="indicators">
-            {JakuzziData.map((_, id) => {
+            {MasazaData.map((_, id) => {
               return (
                 <button
                   key={id}
@@ -47,12 +47,12 @@ const Jakuzzi = () => {
             })}
           </span>
         </div>
-        <div className="bazen-container__right">
-          <h2>Jakuzzi</h2>
+        <div className="masaza-container__right">
+          <h2>Masaža</h2>
           <p>
-            Nakon dana ispunjenog zimskim radostima i boravkom na snegu, Jacuzzi
-            je jedan od užitaka koji sebi možete priuštiti kako bi opuštanje
-            Vaših mišića i celog tela bio potpun.
+            U kombinaciji sa ostalim sadržajima Kalman Spa&Gym centra, masaža
+            predstavlja savršen dodatak prilikom posete wellnessa. Kontaktirajte
+            recepciju i rezervišite neku od masaža iz naše ponude.
           </p>
         </div>
       </div>
@@ -60,4 +60,4 @@ const Jakuzzi = () => {
   );
 };
 
-export default Jakuzzi;
+export default Masaza;

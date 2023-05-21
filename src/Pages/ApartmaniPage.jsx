@@ -3,7 +3,7 @@ import ApartmanList from '../components/ApartmanList'
 
 const ApartmaniPage = () => {
   return (
-    <section className='section apartmani' id='apartmani'>
+    <section className='apartmani' id='apartmani'>
         <ApartmanList/>
     </section>
   )

@@ -1,28 +1,35 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import { BazenData } from "./BazenData";
+import { TeretanaData } from './TeretanaData';
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const Bazen = () => {
-  const [slide, setSlide] = useState(0);
+const Teretana = () => {
+    const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide(slide === BazenData.length - 1 ? 0 : slide + 1);
+    setSlide(slide === TeretanaData.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? BazenData.length - 1 : slide - 1);
+    setSlide(slide === 0 ? TeretanaData.length - 1 : slide - 1);
   };
-
   return (
     <>
-      <div className="container bazen-container">
-        <div className="bazen-container__left">
+      <div className="container teretana-container">
+        
+        <div className="teretana-container__left">
+          <h2>Teretana</h2>
+          <p>
+          Moderno dizajniran ambijent opremljen je najsavremenijim spravama brenda Life Fitness. Teretana raspolaže prijemnim delom sa recepcijom, svlačionicama sa garderobnim ormarićima i tuš kabinama. Testirajte našu profesionalnost i Vašu volju uz bazu profesionalnih instruktora ili individualno na najmodernijim cardio i strength spravama.
+          </p>
+        </div>
+
+        <div className="teretana-container__right">
           <IoIosArrowBack
             onClick={prevSlide}
             className="arrow arrow-left"
           />
-          {BazenData.map((item, id) => {
+          {TeretanaData.map((item, id) => {
             return (
               <img
                 src={item.image}
@@ -38,7 +45,7 @@ const Bazen = () => {
           />
 
           <span className="indicators">
-            {BazenData.map((_, id) => {
+            {TeretanaData.map((_, id) => {
               return (
                 <button
                   key={id}
@@ -51,17 +58,9 @@ const Bazen = () => {
             })}
           </span>
         </div>
-        <div className="bazen-container__right">
-          <h2>Bazen</h2>
-          <p>
-            Plivački bazen dugačak 25m pruža mogućnost potpunog užitka za
-            ljubitelje plivanja I rekreacije. Angažujte plivanjem mišiće tela,
-            ostanite u formi, budite zdravi I zadovoljni.
-          </p>
-        </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Bazen;
+export default Teretana

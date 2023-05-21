@@ -14,7 +14,7 @@ const Sauna = () => {
     setSlide(slide === 0 ? SaunaData.length - 1 : slide - 1);
   };
   return (
-    <section className="section">
+    <>
       <div className="container sauna-container">
         
         <div className="sauna-container__left">
@@ -59,7 +59,7 @@ const Sauna = () => {
           </span>
         </div>
       </div>
-    </section>
+    </>
   )
 }
 
