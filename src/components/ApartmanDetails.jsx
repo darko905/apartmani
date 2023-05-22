@@ -53,7 +53,11 @@ const ApartmanDetails = () => {
               <p className="apartman-single__description">
                 {singleApartman?.fields?.productSummary}
               </p>
-              <button className="button button-flex">Pozovite <AiFillPhone/></button>
+              <a href="tel:0666051258">
+                <button className="button button--flex">
+                  Pozovite <AiFillPhone />
+                </button>
+              </a>
             </div>
             <div className="apartman-single__right">
               <div className="apartman-single__card">
@@ -64,7 +68,7 @@ const ApartmanDetails = () => {
                   <tbody>
                     <tr>
                       <td>Kvadratura</td>
-                      <td>67 m2</td>
+                      <td>{singleApartman?.fields?.productSquare} m2</td>
                     </tr>
                     <tr>
                       <td>Max broj osoba</td>
@@ -72,11 +76,11 @@ const ApartmanDetails = () => {
                     </tr>
                     <tr>
                       <td>Terasa</td>
-                      <td>Da</td>
+                      <td>{singleApartman?.fields?.productTerrace}</td>
                     </tr>
                     <tr>
                       <td>Spavaća soba</td>
-                      <td>2 sobe</td>
+                      <td>{singleApartman?.fields?.productRoom} soba</td>
                     </tr>
                     <tr>
                       <td>Kuhinja</td>
@@ -100,56 +104,37 @@ const ApartmanDetails = () => {
                     </tr>
                   </tbody>
                 </table>
-
-                {/* 
-              single page image[0], [1].....
-              <img
-                src={post.fields.productImage[0].fields.file.url}
-                alt="slika"
-                className="apartman__img"
-          /> */}
               </div>
             </div>
           </div>
-          
-
 
           <div className="apartman-single__content_image">
-
-
             <img
-                src={singleApartman?.fields?.productImage[1]?.fields?.file?.url}
-                alt="slika"
-                className="apartman__img"
-              />
+              src={singleApartman?.fields?.productImage[1]?.fields?.file?.url}
+              alt="slika"
+              className="apartman__img"
+            />
             <img
-                src={singleApartman?.fields?.productImage[2]?.fields?.file?.url}
-                alt="slika"
-                className="apartman__img"
-              />
+              src={singleApartman?.fields?.productImage[2]?.fields?.file?.url}
+              alt="slika"
+              className="apartman__img"
+            />
             <img
-                src={singleApartman?.fields?.productImage[3]?.fields?.file?.url}
-                alt="slika"
-                className="apartman__img"
-              />
+              src={singleApartman?.fields?.productImage[3]?.fields?.file?.url}
+              alt="slika"
+              className="apartman__img"
+            />
             <img
-                src={singleApartman?.fields?.productImage[4]?.fields?.file?.url}
-                alt="slika"
-                className="apartman__img"
-              />
+              src={singleApartman?.fields?.productImage[4]?.fields?.file?.url}
+              alt="slika"
+              className="apartman__img"
+            />
             <img
-                src={singleApartman?.fields?.productImage[5]?.fields?.file?.url}
-                alt="slika"
-                className="apartman__img"
-              />
+              src={singleApartman?.fields?.productImage[5]?.fields?.file?.url}
+              alt="slika"
+              className="apartman__img"
+            />
           </div>
-
-
-
-
-
-
-
         </div>
       </section>
     </>

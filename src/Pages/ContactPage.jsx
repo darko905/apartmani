@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import About from '../components/About'
-import Banner from '../components/Banner'
+import Contact from '../components/Contact'
 import Logo from '../image/Logo/Logo.png';
+import Footer from '../components/Footer';
 
-const AboutPage = () => {
+const ContactPage = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -19,12 +19,12 @@ const AboutPage = () => {
       </div>
     ) : (
     <section className='section'>
-      <About/>
-      <Banner/>
+      <Contact/>
+      <Footer/>
     </section>
     )}
     </>
   )
 }
 
-export default AboutPage
+export default ContactPage

@@ -1,12 +1,32 @@
-import React from 'react'
-import Testominial from '../components/Testominial'
+import React, { useEffect, useState } from "react";
+import Testominial from "../components/Testominial";
+import Banner from "../components/Banner";
+import Footer from "../components/Footer";
+import Logo from "../image/Logo/Logo.png";
 
 const TetsominialPage = () => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
   return (
-    <section className="section container testominial">
-      <Testominial/>
-    </section>
-  )
-}
+    <>
+      {loading ? (
+        <div className="loader-apartman">
+          <img src={Logo} alt="Logo" />
+        </div>
+      ) : (
+        <section className="section testominial">
+          <Testominial />
+          <Banner />
+          <Footer />
+        </section>
+      )}
+    </>
+  );
+};
 
-export default TetsominialPage
+export default TetsominialPage;
