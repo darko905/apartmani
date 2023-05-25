@@ -42,7 +42,9 @@
 
     &-2{
         li{
-            
+            a{
+                color: $text-color;
+            }
             &:nth-child(1){
                 font-size: $h2-font-size;
                 font-weight: $font-medium;
@@ -57,6 +59,7 @@
                 gap: 1rem;
                 align-items: center;
                 margin-bottom: $mb-1-5;
+                color: $text-color;
 
                 @media (max-width: 768px) {
                     width: 100%;

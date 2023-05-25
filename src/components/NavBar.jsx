@@ -20,9 +20,9 @@ const NavBar = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="#home" className="nav__logo">
+        <Link to="/" className="nav__logo">
           <img src={Logo} alt="Logo" className="nav__logo-img" />
-        </a>
+        </Link>
 
         <div className={Toogle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list ">

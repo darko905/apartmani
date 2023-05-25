@@ -3,14 +3,26 @@ import { createClient } from "contentful";
 import { FaBed } from "react-icons/fa";
 import { AiFillPhone } from "react-icons/ai";
 import { useParams } from "react-router-dom";
+import Logo from '../image/Logo/Logo.png';
+import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const ApartmanDetails = () => {
+  const [loading, setLoading] = useState(false);
+  
   const [singleApartman, setSingleApartman] = useState([]);
 
   const client = createClient({
     space: "urkp5t6shmtm",
     accessToken: "3oWK1yJTs0NXjUbuEmzeZeNY9RvAjjlOq6a5kGEekbM",
   });
+
+    useEffect(() => {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1500);
+    }, []);
 
   const { id } = useParams();
 
@@ -33,13 +45,18 @@ const ApartmanDetails = () => {
 
   return (
     <>
+    {loading ? (
+        <div className="loader-apartman">
+          <img src={Logo} alt="Logo" />
+        </div>
+      ) : (
       <section className="section apartman" id="apartman">
         <div className="apartman-single__container container">
           <div className="apartman-single__content ">
             <div className="apartman-single__left">
               <img
                 src={singleApartman?.fields?.productPhoto?.fields?.file?.url}
-                alt={singleApartman?.fields?.title}
+                alt={singleApartman?.fields?.productPhoto?.fields?.file?.title}
                 className="apartman-single__img"
               />
 
@@ -53,11 +70,11 @@ const ApartmanDetails = () => {
               <p className="apartman-single__description">
                 {singleApartman?.fields?.productSummary}
               </p>
-              <a href="tel:0666051258">
+              <Link to="tel:+381605241060">
                 <button className="button button--flex">
                   Pozovite <AiFillPhone />
                 </button>
-              </a>
+              </Link>
             </div>
             <div className="apartman-single__right">
               <div className="apartman-single__card">
@@ -72,7 +89,7 @@ const ApartmanDetails = () => {
                     </tr>
                     <tr>
                       <td>Max broj osoba</td>
-                      <td>4</td>
+                      <td>{singleApartman?.fields?.productPeople}</td>
                     </tr>
                     <tr>
                       <td>Terasa</td>
@@ -109,6 +126,11 @@ const ApartmanDetails = () => {
           </div>
 
           <div className="apartman-single__content_image">
+          <img
+              src={singleApartman?.fields?.productImage[0]?.fields?.file?.url}
+              alt="slika"
+              className="apartman__img"
+            />
             <img
               src={singleApartman?.fields?.productImage[1]?.fields?.file?.url}
               alt="slika"
@@ -134,9 +156,16 @@ const ApartmanDetails = () => {
               alt="slika"
               className="apartman__img"
             />
+            <img
+              src={singleApartman?.fields?.productImage[6]?.fields?.file?.url}
+              alt="slika"
+              className="apartman__img"
+            />
           </div>
         </div>
+        <Footer/>
       </section>
+      )}
     </>
   );
 };

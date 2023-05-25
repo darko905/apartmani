@@ -1,6 +1,6 @@
-import Image1 from "../image/jakuzi/image1.png";
-import Image2 from "../image/jakuzi/image2.png";
-import Image3 from "../image/jakuzi/image3.png";
+import Image1 from "../image/jakuzi/image1.webp";
+import Image2 from "../image/jakuzi/image2.webp";
+import Image3 from "../image/jakuzi/image3.webp";
 
 export const JakuzziData = [
   {

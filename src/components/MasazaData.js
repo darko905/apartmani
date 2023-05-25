@@ -1,6 +1,6 @@
-import Image1 from "../image/masaza/image1.png";
-import Image2 from "../image/masaza/image2.png";
-import Image3 from "../image/masaza/image3.png";
+import Image1 from "../image/masaza/image1.webp";
+import Image2 from "../image/masaza/image2.webp";
+import Image3 from "../image/masaza/image3.webp";
 
 export const MasazaData = [
   {

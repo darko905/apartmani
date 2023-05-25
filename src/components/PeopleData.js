@@ -1,6 +1,6 @@
-import Image1 from '../image/testominial/person1.jpg';
-import Image2 from '../image/testominial/person2.jpg';
-import Image3 from '../image/testominial/person3.jpg';
+import Image1 from '../image/testominial/person1.webp';
+import Image2 from '../image/testominial/person2.webp';
+import Image3 from '../image/testominial/person3.webp';
 
 export const PeopleData =[
     {

@@ -1,6 +1,6 @@
-import Image1 from "../image/teretana/image1.png";
-import Image2 from "../image/teretana/image2.png";
-import Image3 from "../image/teretana/image3.png";
+import Image1 from "../image/teretana/image1.webp";
+import Image2 from "../image/teretana/image2.webp";
+import Image3 from "../image/teretana/image3.webp";
 
 export const TeretanaData = [
   {

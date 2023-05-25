@@ -1,6 +1,6 @@
-import Image1 from "../image/bazen/image1.png";
-import Image2 from "../image/bazen/image2.png";
-import Image3 from "../image/bazen/image3.png";
+import Image1 from "../image/bazen/image1.webp";
+import Image2 from "../image/bazen/image2.webp";
+import Image3 from "../image/bazen/image3.webp";
 
 export const BazenData = [
   {

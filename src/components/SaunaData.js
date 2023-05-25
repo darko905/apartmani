@@ -1,7 +1,7 @@
-import Image1 from "../image/sauna/image1.png";
-import Image2 from "../image/sauna/image2.png";
-import Image3 from "../image/sauna/image3.png";
-import Image4 from "../image/sauna/image4.png";
+import Image1 from "../image/sauna/image1.webp";
+import Image2 from "../image/sauna/image2.webp";
+import Image3 from "../image/sauna/image3.webp";
+import Image4 from "../image/sauna/image4.webp";
 
 export const SaunaData = [
   {

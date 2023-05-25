@@ -11,7 +11,6 @@ import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom";
 import Logo from './image/Logo/Logo.png';
 import ContactPage from "./Pages/ContactPage";
-// import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(false);

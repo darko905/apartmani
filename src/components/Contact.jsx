@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 import { HiOutlineLocationMarker } from "react-icons/hi";
-
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const form = useRef();
@@ -29,25 +29,33 @@ const Contact = () => {
       <div className="contact__container container grid">
         <div className="contact__content">
           <div className="contact__info">
-            <div className="contact__card">
-              <AiOutlineMail className="contact__card-icon" />
+            <Link to="mailto:luka1radojicic@gmail.com">
+              <div className="contact__card">
+                <AiOutlineMail className="contact__card-icon" />
 
-              <span className="contact__card-data">luka1radojicic.com</span>
-            </div>
+                <span className="contact__card-data">
+                  luka1radojicic@gmail.com
+                </span>
+              </div>
+            </Link>
 
-            <div className="contact__card">
-              <AiFillPhone className="contact__card-icon" />
+            <Link to="tel:+381605241060">
+              <div className="contact__card">
+                <AiFillPhone className="contact__card-icon" />
 
-              <span className="contact__card-data">+381605241060</span>
-            </div>
+                <span className="contact__card-data">+381605241060</span>
+              </div>
+            </Link>
 
-            <div className="contact__card">
-              <HiOutlineLocationMarker className="contact__card-icon" />
+            <Link to="https://www.google.com/maps/place/43.724855,19.694364/@43.724855,19.694364,18z">
+              <div className="contact__card">
+                <HiOutlineLocationMarker className="contact__card-icon" />
 
-              <span className="contact__card-data">
-                Miladina Pećinara 94g, 31315, Zlatibor
-              </span>
-            </div>
+                <span className="contact__card-data">
+                  Miladina Pećinara 94g, 31315, Zlatibor
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="contact__content">
@@ -73,14 +81,11 @@ const Contact = () => {
             <div className="contact__form-div">
               <label className="contact__form-tag">Telefon</label>
               <input
-                min="9"
-                max="10"
                 type="number"
                 name="number"
                 className="contact__form-input"
                 placeholder="Broj telefona"
               />
-              
             </div>
             <div className="contact__form-div contact__form-area">
               <label className="contact__form-tag">Poruka</label>

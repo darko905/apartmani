@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import About from '../components/About'
 import Banner from '../components/Banner'
 import Logo from '../image/Logo/Logo.png';
+import Footer from '../components/Footer';
 
 const AboutPage = () => {
   const [loading, setLoading] = useState(false);
@@ -9,7 +10,7 @@ const AboutPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 800);
   }, []);
   return (
     <>
@@ -21,6 +22,7 @@ const AboutPage = () => {
     <section className='section'>
       <About/>
       <Banner/>
+      <Footer/>
     </section>
     )}
     </>

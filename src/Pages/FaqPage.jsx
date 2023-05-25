@@ -9,7 +9,7 @@ const FaqPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 800);
   }, []);
   return (
     <>
@@ -18,10 +18,13 @@ const FaqPage = () => {
           <img src={Logo} alt="Logo" />
         </div>
       ) : (
+        <>
         <section className="section faq">
           <Faq />
-          <Footer />
+          
         </section>
+        <Footer />
+        </>
       )}
     </>
   );

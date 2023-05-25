@@ -2,7 +2,7 @@
 .home {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/src/image/Hero/heroBg.png");
+    url("/src/image/Hero/heroBg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -48,6 +48,10 @@
     gap: 1rem;
     font-size: 2rem;
     margin-bottom: $mb-1-5;
+
+    &-icons{
+      color: $first-color;
+    }
 
     @media screen and (max-width: 768px) {
       margin: $mb-1-5 auto;

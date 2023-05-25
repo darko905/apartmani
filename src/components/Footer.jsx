@@ -26,26 +26,37 @@ const Footer = () => {
             <li>Link</li>
             <li>
               <IoMdArrowDropright className="footer__content-2_icons" />{" "}
-              <Link to="/apartmani" className="footer__content-2_link">Apartmani</Link>
+              <Link to="/apartmani" className="footer__content-2_link">
+                Apartmani
+              </Link>
             </li>
             <li>
               <IoMdArrowDropright className="footer__content-2_icons" />{" "}
-              <Link to="/about" className="footer__content-2_link">O nama</Link>
+              <Link to="/about" className="footer__content-2_link">
+                O nama
+              </Link>
             </li>
             <li>
               <IoMdArrowDropright className="footer__content-2_icons" />{" "}
-              <Link to="/wellness" className="footer__content-2_link">Wellness</Link>
+              <Link to="/wellness" className="footer__content-2_link">
+                Wellness
+              </Link>
             </li>
           </ul>
 
           <ul className="footer__content-2">
             <li>Kontakt</li>
             <li>
-              <AiFillPhone className="footer__content-2_icons" /> (060) 5241060
+              <Link to="">
+                <AiFillPhone className="footer__content-2_icons" /> (060)
+                5241060
+              </Link>
             </li>
             <li>
-              <AiOutlineMail className="footer__content-2_icons" />{" "}
-              lukaradojicic@gmail.com
+              <Link to="">
+                <AiOutlineMail className="footer__content-2_icons" />{" "}
+                lukaradojicic@gmail.com
+              </Link>
             </li>
             <li>
               <MdLocationOn className="footer__content-2_icons" /> Miladina
