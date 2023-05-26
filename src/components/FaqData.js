@@ -14,4 +14,9 @@ export const FaqData = [
     answer:
       "Svakom gostu naših apartmana je na raspolaganju parking mesto, koje je osigurano i bezbedno. Naš cilj je da učinimo vaš boravak kod nas što prijatnijim i bez stresa, pa se nadamo da ćete uživati u pogodnostima koje pruža naš objekat.",
   },
+  {
+    qustion: "4. Da li postoji pospust za wellnes?",
+    answer:
+      "Za svakog gosta naših apartmana je omogućen posput za korišćcenje wellnesa.",
+  },
 ];

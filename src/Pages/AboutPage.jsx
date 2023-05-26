@@ -3,6 +3,7 @@ import About from '../components/About'
 import Banner from '../components/Banner'
 import Logo from '../image/Logo/Logo.png';
 import Footer from '../components/Footer';
+import Quad from '../components/Quad';
 
 const AboutPage = () => {
   const [loading, setLoading] = useState(false);
@@ -22,6 +23,7 @@ const AboutPage = () => {
     <section className='section'>
       <About/>
       <Banner/>
+      <Quad/>
       <Footer/>
     </section>
     )}

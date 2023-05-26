@@ -59,21 +59,6 @@ const ApartmanList = () => {
                 <button className="button button--flex">Saznajte više <BsArrowRightShort/></button>
               </div>
               </Link>
-              
-              
-              {/* <img
-                src={post.fields.productImage[0].fields.file.url}
-                alt="slika"
-                className="apartman__img"
-              />
-              <img
-                src={post.fields.productImage[1].fields.file.url}
-                alt="slika"
-                className="apartman__img"
-              /> */}
-
-             
-             
             </div>
           ))}
         </div>

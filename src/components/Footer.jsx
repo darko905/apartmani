@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { IoMdArrowDropright } from "react-icons/io";
 
 const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <footer className="section footer">
       <div className="container">
@@ -66,8 +68,10 @@ const Footer = () => {
         </div>
         <div className="copyright-text">
           <p>
-            Copyright &copy; 2023, All Right Reserved{" "}
+            Copyright &copy; {year}, All Right Reserved Gold Kalman <br /><br />
+            Designed with ❤ by
             <Link to="https://darkodjukic.netlify.app/" className="name">
+              {" "}
               Darko Djukic
             </Link>
           </p>
